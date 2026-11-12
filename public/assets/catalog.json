@@ -1,0 +1,307 @@
+{
+  "assets": [
+    {
+      "id": "book",
+      "name": "Книга",
+      "tags": [
+        "книга",
+        "чтение",
+        "учеба",
+        "знания"
+      ],
+      "variants": {
+        "L": {
+          "main": "assets/book-l-main.svg",
+          "background": "assets/book-l-background.svg"
+        },
+        "S": {
+          "main": "assets/book-s-main.svg",
+          "background": "assets/book-s-background.svg"
+        }
+      },
+      "canonicalSize": {
+        "width": 1446.0,
+        "height": 977.0
+      }
+    },
+    {
+      "id": "wallet",
+      "name": "Кошелек",
+      "tags": [
+        "кошелек",
+        "деньги",
+        "финансы"
+      ],
+      "variants": {
+        "L": {
+          "main": "assets/wallet-l-main.svg",
+          "background": "assets/wallet-l-background.svg"
+        },
+        "S": {
+          "main": "assets/wallet-s-main.svg",
+          "background": "assets/wallet-s-background.svg"
+        }
+      },
+      "canonicalSize": {
+        "width": 631.0,
+        "height": 397.0
+      }
+    },
+    {
+      "id": "lamp",
+      "name": "Лампа",
+      "tags": [
+        "лампа",
+        "свет",
+        "идея"
+      ],
+      "variants": {
+        "L": {
+          "main": "assets/lamp-l-main.svg",
+          "background": "assets/lamp-l-background.svg"
+        },
+        "S": {
+          "main": "assets/lamp-s-main.svg",
+          "background": "assets/lamp-s-background.svg"
+        }
+      },
+      "canonicalSize": {
+        "width": 946.0,
+        "height": 1129.0
+      }
+    },
+    {
+      "id": "coin",
+      "name": "Монета",
+      "tags": [
+        "монета",
+        "деньги",
+        "доход"
+      ],
+      "variants": {
+        "L": {
+          "main": "assets/coin-l-main.svg",
+          "background": "assets/coin-l-background.svg"
+        },
+        "S": {
+          "main": "assets/coin-s-main.svg",
+          "background": "assets/coin-s-background.svg"
+        }
+      },
+      "canonicalSize": {
+        "width": 287.0,
+        "height": 189.0
+      }
+    },
+    {
+      "id": "headphones",
+      "name": "Наушники",
+      "tags": [
+        "наушники",
+        "музыка",
+        "звук"
+      ],
+      "variants": {
+        "L": {
+          "main": "assets/headphones-l-main.svg",
+          "background": "assets/headphones-l-background.svg"
+        },
+        "S": {
+          "main": "assets/headphones-s-main.svg",
+          "background": "assets/headphones-s-background.svg"
+        }
+      },
+      "canonicalSize": {
+        "width": 889.0,
+        "height": 692.0
+      }
+    },
+    {
+      "id": "puzzle",
+      "name": "Пазлы",
+      "tags": [
+        "пазл",
+        "пазлы",
+        "решение",
+        "команда"
+      ],
+      "variants": {
+        "L": {
+          "main": "assets/puzzle-l-main.svg",
+          "background": "assets/puzzle-l-background.svg"
+        },
+        "S": {
+          "main": "assets/puzzle-s-main.svg",
+          "background": "assets/puzzle-s-background.svg"
+        }
+      },
+      "canonicalSize": {
+        "width": 545.0,
+        "height": 314.0
+      }
+    },
+    {
+      "id": "folder",
+      "name": "Папка",
+      "tags": [
+        "папка",
+        "документы",
+        "работа"
+      ],
+      "variants": {
+        "L": {
+          "main": "assets/folder-l-main.svg",
+          "background": "assets/folder-l-background.svg"
+        },
+        "S": {
+          "main": "assets/folder-s-main.svg",
+          "background": "assets/folder-s-background.svg"
+        }
+      },
+      "canonicalSize": {
+        "width": 1241.0,
+        "height": 659.0
+      }
+    },
+    {
+      "id": "pen",
+      "name": "Ручка",
+      "tags": [
+        "ручка",
+        "письмо",
+        "творчество"
+      ],
+      "variants": {
+        "L": {
+          "main": "assets/pen-l-main.svg",
+          "background": "assets/pen-l-background.svg"
+        },
+        "S": {
+          "main": "assets/pen-s-main.svg",
+          "background": "assets/pen-s-background.svg"
+        }
+      },
+      "canonicalSize": {
+        "width": 509.0,
+        "height": 286.0
+      }
+    },
+    {
+      "id": "phone",
+      "name": "Телефон",
+      "tags": [
+        "телефон",
+        "связь",
+        "общение"
+      ],
+      "variants": {
+        "L": {
+          "main": "assets/phone-l-main.svg",
+          "background": "assets/phone-l-background.svg"
+        },
+        "S": {
+          "main": "assets/phone-s-main.svg",
+          "background": "assets/phone-s-background.svg"
+        }
+      },
+      "canonicalSize": {
+        "width": 797.0,
+        "height": 462.0
+      }
+    },
+    {
+      "id": "object",
+      "name": "Объект",
+      "tags": [
+        "объект",
+        "предмет"
+      ],
+      "variants": {
+        "L": {
+          "main": "assets/object-l-main.svg",
+          "background": "assets/object-l-background.svg"
+        },
+        "S": {
+          "main": "assets/object-s-main.svg",
+          "background": "assets/object-s-background.svg"
+        }
+      },
+      "canonicalSize": {
+        "width": 591.0,
+        "height": 748.0
+      }
+    }
+  ],
+  "palettes": [
+    {
+      "id": "lilac",
+      "name": "Сиреневая",
+      "colors": {
+        "surface": "#D7CDF5",
+        "yellow": "#F9ECB0",
+        "accent": "#AA9BF0",
+        "pink": "#F9A3AA",
+        "ink": "#7864D7",
+        "light": "#FFE3E1",
+        "outline": "#181817",
+        "white": "#FFFFFF"
+      },
+      "allowedBackgroundSlots": [
+        "surface",
+        "accent",
+        "ink",
+        "white"
+      ]
+    },
+    {
+      "id": "peach",
+      "name": "Персиковая",
+      "colors": {
+        "surface": "#FDD7B9",
+        "yellow": "#F9ECB0",
+        "accent": "#FAC896",
+        "pink": "#80DADA",
+        "ink": "#D27532",
+        "light": "#BEEBEB",
+        "outline": "#181817",
+        "white": "#FFFFFF"
+      },
+      "allowedBackgroundSlots": [
+        "surface",
+        "accent",
+        "ink",
+        "white"
+      ]
+    },
+    {
+      "id": "teal",
+      "name": "Бирюзовая",
+      "colors": {
+        "surface": "#BEEBEB",
+        "yellow": "#FFD4F2",
+        "accent": "#80DADA",
+        "pink": "#6D7BFC",
+        "ink": "#5ABEBE",
+        "light": "#B6C6FE",
+        "outline": "#181817",
+        "white": "#FFFFFF"
+      },
+      "allowedBackgroundSlots": [
+        "surface",
+        "accent",
+        "ink",
+        "white"
+      ]
+    }
+  ],
+  "sourceColors": {
+    "surface": "#D7CDF5",
+    "yellow": "#F9ECB0",
+    "accent": "#AA9BF0",
+    "pink": "#F9A3AA",
+    "ink": "#7864D7",
+    "light": "#FFE3E1",
+    "outline": "#181817",
+    "white": "#FFFFFF"
+  }
+}

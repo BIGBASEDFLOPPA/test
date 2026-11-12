@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Векторные иллюстрации из готовых объектов. Локальный конструктор SVG.">
+  <title>Состав — конструктор иллюстраций</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Состав — главная"><span class="brand-mark">с.</span> состав<span class="brand-note">конструктор иллюстраций</span></a>
+    <div class="header-actions"><span class="local-badge">● Локальная мастерская</span><button id="export" class="button primary">Скачать SVG <span>↗</span></button></div>
+  </header>
+  <main class="workspace">
+    <aside class="library panel">
+      <div class="section-heading"><div><span class="eyebrow">01 / МАТЕРИАЛЫ</span><h1>Библиотека</h1></div><span id="asset-count" class="count">10</span></div>
+      <p class="muted">Готовые объекты. Новые сочетания.</p>
+      <label class="search-label"><span>⌕</span><input id="search" type="search" placeholder="Найти объект" aria-label="Найти объект"></label>
+      <div id="asset-grid" class="asset-grid" aria-label="Объекты библиотеки"></div>
+      <div class="library-note"><span>↗</span><p>Нажмите на объект, чтобы добавить его на холст. Пропорции сохраняются автоматически.</p></div>
+    </aside>
+    <section class="studio" aria-label="Редактор композиции">
+      <div class="studio-heading"><div><span class="eyebrow">02 / КОМПОЗИЦИЯ</span><h2>Соберите свою историю</h2></div><span class="vector-badge">SVG · 100% вектор</span></div>
+      <section class="prompt-card">
+        <div class="prompt-top"><label for="prompt">С чего начнём?</label><span id="ai-status">Локальный подбор</span></div>
+        <div class="prompt-row"><input id="prompt" maxlength="240" placeholder="Например, «Собрать знания воедино»"><button id="compose" class="button dark">Подобрать <span>✦</span></button></div>
+        <div class="prompt-bottom"><div class="suggestions"><button data-prompt="Собрать знания воедино">Знания воедино</button><button data-prompt="Деньги под контролем">Деньги под контролем</button><button data-prompt="Есть идея">Есть идея</button></div><label class="ai-toggle"><input id="allow-ai" type="checkbox"> Cohere для сложных запросов</label></div>
+      </section>
+      <div class="canvas-toolbar"><div class="segmented" id="format-controls"></div><div class="toolbar-right"><button id="undo" class="icon-button" title="Отменить" aria-label="Отменить">↶</button><button id="redo" class="icon-button" title="Повторить" aria-label="Повторить">↷</button><span id="dimensions">1000 × 1000</span></div></div>
+      <div class="canvas-area"><div id="canvas-frame" class="canvas-frame"><div id="canvas" tabindex="0" role="application" aria-label="Холст. Выберите объект для редактирования"></div><div id="selection-box" hidden></div></div></div>
+      <div class="canvas-footer"><span id="scene-info">Загрузка библиотеки…</span><span>Перетаскивайте объекты · Delete — удалить</span></div>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </section>
+    <aside class="inspector panel">
+      <span class="eyebrow">03 / НАСТРОЙКИ</span><h2>Характер сцены</h2>
+      <fieldset><legend>Детализация</legend><div class="segmented detail-control"><button data-detail="L" class="active">L <small>Подробная</small></button><button data-detail="S">S <small>Лаконичная</small></button></div></fieldset>
+      <fieldset><legend>Цветовая схема</legend><div id="palettes" class="palettes"></div><label class="import-label">＋ Загрузить палитру JSON<input id="palette-import" type="file" accept=".json,application/json" hidden></label><button id="palette-example" class="text-button">Скачать пример палитры</button></fieldset>
+      <fieldset><legend>Композиция</legend><label class="field-label" for="layout">Расположение</label><select id="layout"><option value="balanced">Собранно</option><option value="offset">Со смещением</option><option value="headline">Под заголовок</option></select><button id="reflow" class="button secondary full">↻ Пересобрать объекты</button><label class="field-label" for="scale">Общий масштаб <output id="scale-value">100%</output></label><input id="scale" type="range" min="50" max="160" value="100"></fieldset>
+      <fieldset id="object-settings"><legend>Выбранный объект</legend><p id="selection-empty" class="muted">Нажмите на объект на холсте.</p><div id="selection-controls" hidden><strong id="selected-name"></strong><label class="field-label" for="role">Роль объекта</label><select id="role"><option value="main">Главный · цветной</option><option value="background">Фоновый · монохром</option></select><label class="field-label" for="rotation">Поворот <output id="rotation-value">0°</output></label><input id="rotation" type="range" min="-180" max="180" value="0"><div class="object-actions"><button id="duplicate" title="Дублировать">Копия</button><button id="backward" title="На слой ниже">↓</button><button id="forward" title="На слой выше">↑</button><button id="delete" class="danger" title="Удалить">Удалить</button></div></div></fieldset>
+      <fieldset><legend>Слои <span id="layer-count"></span></legend><div id="layers" class="layers"></div></fieldset>
+      <div class="project-actions"><button id="save-project" class="text-button">Сохранить проект</button><label class="text-button">Открыть<input id="open-project" type="file" accept=".json" hidden></label></div>
+    </aside>
+  </main>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
